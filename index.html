@@ -4,38 +4,87 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>RAZINVERSE</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+
   <style>
     body {
       background-color: #121212;
       color: white;
-      font-family: Arial, sans-serif;
+      font-family: 'Orbitron', sans-serif;
       margin: 0;
       padding: 0;
       text-align: center;
     }
+
     .container {
       max-width: 600px;
       margin: 50px auto;
       padding: 20px;
     }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+
+    /* Profile image */
+    .profile {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      box-shadow: 0 0 15px #0ff;
+      animation: popIn 1.2s ease-out forwards;
     }
+
+    /* Title with animation */
+    .title {
+      font-size: 2.5rem;
+      margin-top: 15px;
+      animation: fadeInZoom 1s ease-in-out forwards;
+    }
+
+    @keyframes fadeInZoom {
+      0% {
+        opacity: 0;
+        transform: scale(0.8);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes popIn {
+      0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
     .button {
       display: block;
-      background-color: #1f1f1f;
+      background: #1f1f1f;
       color: white;
       text-decoration: none;
       padding: 15px;
-      margin: 10px 0;
-      border-radius: 8px;
+      margin: 12px 0;
+      border-radius: 12px;
       border: 1px solid #333;
-      transition: background-color 0.3s;
+      box-shadow: 0 5px 15px rgba(0,255,255,0.2);
+      transition: all 0.3s ease;
+      font-size: 1.2rem;
+      font-weight: bold;
     }
+
     .button:hover {
-      background-color: #333;
+      background-color: #0ff;
+      color: black;
+      transform: scale(1.03);
+      box-shadow: 0 0 25px #0ff, 0 0 50px #0ff;
     }
+
     img.icon {
       width: 30px;
       height: 30px;
@@ -44,20 +93,18 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <div style="text-align: center; margin-bottom: 20px;">
-  <img src="profile.jpg" alt="RAZINVERSE" style="width: 120px; height: 120px; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 0 10px #000;">
-  <h1 style="color: white; margin-top: 10px;">RAZINVERSE</h1>
-</div>
+    <img src="profile.jpg" alt="RAZINVERSE" class="profile">
+    <h1 class="title">RAZINVERSE</h1>
 
-    <h1>RAZINVERSE</h1>
     <a class="button" href="https://t.me/razinversegames">📱 Telegram Games</a>
     <a class="button" href="https://yourwebsite.com/games">🎮 Games</a>
     <a class="button" href="https://yourwebsite.com/tools">🛠️ Tools</a>
     <a class="button" href="https://yourwebsite.com/mods">🧩 Mods</a>
     <a class="button" href="https://t.me/razinversesoftware">💻 Softwares</a>
-    <a class="button" href="https://www.youtube.com/channel/UC9VzCmNmCMIRSKAKPd0ovCA">🚀YOUTUBE</a>
+    <a class="button" href="https://www.youtube.com/channel/UC9VzCmNmCMIRSKAKPd0ovCA">🚀 YOUTUBE</a>
     <a class="button" href="https://yourinstagram.com">📷 Instagram</a>
   </div>
 </body>
