@@ -2,101 +2,97 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RAZINVERSE</title>
-
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@400;700&display=swap');
+
     body {
-      background-color: #121212;
-      color: white;
-      font-family: 'Orbitron', sans-serif;
       margin: 0;
-      padding: 0;
-      text-align: center;
+      background: radial-gradient(circle at top, #1a1a1a, #0a0a0a);
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
     }
 
     .container {
-      max-width: 600px;
-      margin: 50px auto;
+      text-align: center;
       padding: 20px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+      backdrop-filter: blur(8px);
     }
 
-    /* Profile image */
     .profile {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      border: 3px solid #fff;
-      box-shadow: 0 0 15px #0ff;
-      animation: popIn 1.2s ease-out forwards;
+      border: 3px solid cyan;
+      box-shadow: 0 0 15px cyan;
+      margin-bottom: 15px;
+      animation: float 4s ease-in-out infinite;
     }
 
-    /* Title with animation */
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
     .title {
+      font-family: 'Orbitron', sans-serif;
       font-size: 2.5rem;
-      margin-top: 15px;
-      animation: fadeInZoom 1s ease-in-out forwards;
-    }
-
-    @keyframes fadeInZoom {
-      0% {
-        opacity: 0;
-        transform: scale(0.8);
-      }
-      100% {
-        opacity: 1;
-        transform: scale(1);
-      }
-    }
-
-    @keyframes popIn {
-      0% {
-        transform: scale(0);
-        opacity: 0;
-      }
-      100% {
-        transform: scale(1);
-        opacity: 1;
-      }
+      color: #00ffff;
+      text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+      margin-bottom: 30px;
     }
 
     .button {
       display: block;
-      background: #1f1f1f;
+      background: #111;
       color: white;
       text-decoration: none;
-      padding: 15px;
-      margin: 12px 0;
+      padding: 15px 25px;
+      margin: 10px 0;
       border-radius: 12px;
-      border: 1px solid #333;
-      box-shadow: 0 5px 15px rgba(0,255,255,0.2);
+      font-size: 1.1rem;
+      box-shadow: 0 4px 15px rgba(0, 255, 255, 0.2);
       transition: all 0.3s ease;
-      font-size: 1.2rem;
-      font-weight: bold;
+      backdrop-filter: blur(4px);
     }
 
     .button:hover {
-      background-color: #0ff;
-      color: black;
-      transform: scale(1.03);
-      box-shadow: 0 0 25px #0ff, 0 0 50px #0ff;
+      background: #00ffff;
+      color: #111;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #00ffff;
     }
 
-    img.icon {
-      width: 30px;
-      height: 30px;
+    .icon {
       vertical-align: middle;
-      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    @media screen and (max-width: 500px) {
+      .title {
+        font-size: 2rem;
+      }
+      .button {
+        font-size: 1rem;
+        padding: 12px 18px;
+      }
     }
   </style>
 </head>
-
 <body>
   <div class="container">
-    <img src="profile.jpg" alt="RAZINVERSE" class="profile">
+    <img src="profile.jpg" alt="RAZINVERSE" class="profile" />
     <h1 class="title">RAZINVERSE</h1>
 
     <a class="button" href="https://t.me/razinversegames">📱 Telegram Games</a>
@@ -104,8 +100,8 @@
     <a class="button" href="https://yourwebsite.com/tools">🛠️ Tools</a>
     <a class="button" href="https://yourwebsite.com/mods">🧩 Mods</a>
     <a class="button" href="https://t.me/razinversesoftware">💻 Softwares</a>
-    <a class="button" href="https://www.youtube.com/channel/UC9VzCmNmCMIRSKAKPd0ovCA">🚀 YOUTUBE</a>
-    <a class="button" href="https://www.instagram.com/razin.verse?igsh=cm1ubm9uMDRqOW1u">📷 Instagram</a>
+    <a class="button" href="https://www.youtube.com/channel/UC9v2CMhiMRcSKApdpo0vCqA">🚀 YOUTUBE</a>
+    <a class="button" href="https://www.instagram.com/razin.verse?igsh=cm1ubm9uMDRRQW1u">📷 Instagram</a>
   </div>
 </body>
 </html>
