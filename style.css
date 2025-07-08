@@ -1,0 +1,50 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.verified {
+  color: #00aaff;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+  vertical-align: middle;
+  filter: brightness(0) invert(1);
+}
+
+.links {
+  margin-top: 30px;
+}
+
+.link-card {
+  display: block;
+  background-color: #1e1e1e;
+  margin: 10px auto;
+  padding: 15px;
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+.link-card:hover {
+  background-color: #333;
+}
