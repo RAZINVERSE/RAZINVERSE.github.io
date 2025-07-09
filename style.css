@@ -1,50 +1,44 @@
 body {
-  background-color: #111;
-  color: white;
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
   text-align: center;
+  padding: 30px;
 }
 
 .container {
-  padding: 20px;
+  max-width: 600px;
+  margin: auto;
 }
 
 h1 {
-  font-size: 2em;
-  margin-bottom: 10px;
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #fff;
+  text-shadow: 0 0 10px #0ff;
 }
 
-.verified {
-  color: #00aaff;
-}
-
-.social-icons img {
-  width: 30px;
-  margin: 0 10px;
-  vertical-align: middle;
-  filter: brightness(0) invert(1);
-}
-
-.links {
-  margin-top: 30px;
-}
-
-.link-card {
+.button {
   display: block;
-  background-color: #1e1e1e;
-  margin: 10px auto;
-  padding: 15px;
-  width: 90%;
-  max-width: 400px;
-  border-radius: 10px;
+  margin: 15px auto;
+  padding: 15px 25px;
+  width: 80%;
+  max-width: 300px;
+  background: linear-gradient(145deg, #111, #222);
+  border: 1px solid #0ff;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   text-decoration: none;
-  color: white;
-  font-size: 1.1em;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.2);
 }
 
-.link-card:hover {
-  background-color: #333;
+.button:hover {
+  background: #0ff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0ff, 0 0 30px #0ff;
 }
+
