@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games - RAZINVERSE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="glow-text">🎮 Games</h1>
+    
+    <a class="button" href="#">Minecraft</a>
+    <a class="button" href="#">Free Fire</a>
+    <a class="button" href="#">PUBG</a>
+
+    <a class="button" href="index.html">⬅️ Back to Home</a>
+  </div>
+</body>
+</html>
