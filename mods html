@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>🧩 Mods - RAZINVERSE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧩 Mods</h1>
+
+    <!-- Add your mods here -->
+    <a class="button" href="https://t.me/yourchannel">🚀 Minecraft Mod</a>
+    <a class="button" href="https://t.me/yourchannel">🔥 GTA Mod</a>
+    <a class="button" href="https://t.me/yourchannel">🛡 Free Fire Mod</a>
+    <a class="button" href="https://t.me/yourchannel">⚔️ PUBG Mod</a>
+
+    <!-- Navigation -->
+    <a class="button" href="index.html">🏠 Back to Home</a>
+  </div>
+</body>
+</html>
